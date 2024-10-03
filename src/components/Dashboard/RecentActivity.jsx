@@ -7,9 +7,9 @@ function RecentActivity() {
   const Activity =({activity}) => {
     return (
         <div className='items-center gap-4 my-3 grid grid-cols-8'>
-          <p className='col-span-2 text-slate-500'>{activity.time}</p>
-          <p>{activity.icon}</p>
-          <p className='col-span-5'>{activity.desc}</p>
+          <div className='col-span-2 text-slate-500'>{activity.time}</div>
+          <div>{activity.icon}</div>
+          <div className='col-span-5'>{activity.desc}</div>
         </div>
     )
   }
@@ -48,11 +48,11 @@ const Dropdownmenu = () => (
     placement="bottomRight"
     arrow
   >
-    <a onClick={(e) => e.preventDefault()}>
+    {/* <a onClick={(e) => e.preventDefault()}> */}
       <Space>
         <Threedot />
       </Space>
-    </a>
+    {/* </a> */}
   </Dropdown>
 );
 

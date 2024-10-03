@@ -33,6 +33,7 @@ function Dashboard() {
           extra: '⌘S',
         },
       ];
+
       const Dropdownmenu = () => (
         <Dropdown
           menu={{
@@ -41,11 +42,11 @@ function Dashboard() {
           placement="bottomRight"
           arrow
         >
-          <a onClick={(e) => e.preventDefault()}>
+          {/* <a onClick={(e) => e.preventDefault()}> */}
             <Space>
               <Threedot />
             </Space>
-          </a>
+          {/* </a> */}
         </Dropdown>
       );
   
@@ -111,13 +112,14 @@ function Dashboard() {
                     </div>
                     
                 </div>
-                <p>
+                <div>
                     <ChartX/>
-                </p>
+                </div>
             </div>
 
             <div class="col-span-2">
                 <RecentActivity/>
+                {/* <h2>Hello</h2> */}
             </div>
         </div>
     </div>  

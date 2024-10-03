@@ -83,11 +83,11 @@ export default function ChartX() {
       placement="bottomRight"
       arrow
     >
-      <a onClick={(e) => e.preventDefault()}>
+      {/* <a onClick={(e) => e.preventDefault()}> */}
         <Space>
           <Threedot />
         </Space>
-      </a>
+      {/* </a> */}
     </Dropdown>
   );
 

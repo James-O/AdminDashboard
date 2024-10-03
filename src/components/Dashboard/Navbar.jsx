@@ -54,11 +54,11 @@ const Navbar = () => {
       placement="bottomRight"
       arrow
     >
-      <a onClick={(e) => e.preventDefault()}>
+      {/* <a onClick={(e) => e.preventDefault()}> */}
         <Space className='ml-2'>
         <Button type="primary" icon={<Avatar src={<Image src={ProfileImg} alt="avatar"/>} />} />
         </Space>
-      </a>
+      {/* </a> */}
     </Dropdown>
   );
 //dropdown end
