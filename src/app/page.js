@@ -4,7 +4,7 @@ import Dashboard from "@/pages/Dashboard";
 export default function Home() {
   return (
     <div>
-      <Dashboard/>
+      {/* <Dashboard/> */}
     </div>
   );
 }
