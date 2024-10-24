@@ -4,6 +4,9 @@ import {SettingOutlined, ShoppingCartOutlined, DollarOutlined,UsergroupAddOutlin
 import RecentActivity from '@/components/Dashboard/RecentActivity';
 import { Threedot } from '@/icon/icon';
 import ChartX from '@/components/Dashboard/Chart';
+import TableDesign from '@/components/Dashboard/TableDesign';
+import TableData from '@/components/Dashboard/TableData';
+import Products from '@/components/Dashboard/Products';
 
 function Dashboard() {
     //dropdown
@@ -114,6 +117,15 @@ function Dashboard() {
                 </div>
                 <div>
                     <ChartX/>
+                </div>
+                <div className='mt-6'>
+                  <TableDesign/>
+                </div>
+                <div className='mt-6'>
+                  <TableData/>
+                </div>
+                <div className='mt-6'>
+                  <Products/>
                 </div>
             </div>
 
