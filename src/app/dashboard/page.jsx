@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import { Card,Button, Dropdown, Space } from 'antd';
 import {SettingOutlined, ShoppingCartOutlined, DollarOutlined,UsergroupAddOutlined} from '@ant-design/icons'
@@ -7,6 +9,7 @@ import ChartX from '@/components/Dashboard/Chart';
 import TableDesign from '@/components/Dashboard/TableDesign';
 import TableData from '@/components/Dashboard/TableData';
 import Products from '@/components/Dashboard/Products';
+
 
 function Dashboard() {
     //dropdown
@@ -54,8 +57,9 @@ function Dashboard() {
       );
   
     //dropdown end
-    let CardX =({card})=>{
-        return(
+
+    let CardX =({card})=>
+        (
             <div className='p-3 h-36 bg-white rounded-md shadow-md'>
                 <div className='flex'>
                     <h2 className='text-blue-900 font-bold mb-6 text-lg'>{card.title} | <span className='text-slate-300'>{card.year}</span></h2>
@@ -70,9 +74,9 @@ function Dashboard() {
                 </div>
             </div>
         )
-    }
   return (
-    <div>
+    //<div className="ml-72 mt-[-34rem] mr-8">
+    <div className="">
         <h1 className='text-blue-900 font-bold size-8 text-xl'>Dashboard</h1>
         <h2 className='mb-3'>Home / Dashboard</h2>
         <div className='grid grid-cols-6 gap-5'>
@@ -115,12 +119,12 @@ function Dashboard() {
                     </div>
                     
                 </div>
-                <div>
+                 <div>
                     <ChartX/>
                 </div>
-                <div className='mt-6'>
+                {/* <div className='mt-6'>
                   <TableDesign/>
-                </div>
+                </div> */}
                 <div className='mt-6'>
                   <TableData/>
                 </div>
@@ -133,7 +137,7 @@ function Dashboard() {
                 <RecentActivity/>
                 {/* <h2>Hello</h2> */}
             </div>
-        </div>
+        </div> 
     </div>  
   )
 }

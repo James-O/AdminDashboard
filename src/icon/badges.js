@@ -3,8 +3,8 @@ import Badge from '@mui/material/Badge';
 
 export function Notify() {
     return (
-    <Badge badgeContent={6} color="error">
-        <Notifications color='primary'/>
+    <Badge badgeContent={6} color="error" >
+        <Notifications size='36' style={{color:'black'}}/>
       </Badge>
     );
   }
@@ -12,14 +12,14 @@ export function Notify() {
   export function Cart() {
     return (
       <Badge badgeContent={4} color="error">
-        <ShoppingCart color='primary'/>
+        <ShoppingCart style={{color:'black'}}/>
       </Badge>
     );
   }
   export function Message() {
     return (
       <Badge badgeContent={5} color="error">
-        <Mail color='primary'/>
+        <Mail style={{color:'black'}}/>
       </Badge>
     );
   }

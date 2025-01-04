@@ -3,6 +3,8 @@ import { Threedot } from '@/icon/icon';
 import { Dropdown, Space } from 'antd';
 import {SettingOutlined} from '@ant-design/icons'
 import React from 'react'
+import Product1 from '../../image/productone.PNG';
+import ProfileImg from '../../image/test2.PNG'
 
 function Products() {
   const items = [
@@ -55,6 +57,16 @@ function Products() {
       {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-5'> */}
       <div className='grid grid-cols-12 2xl'>
         <h2 className='col-span-2'>Preview</h2>
+        <h2 className='col-span-4'>Product</h2>
+        <h2 className='col-span-2'>Price</h2>
+        <h2 className='col-span-2'>Sold</h2>
+        <h2 className='col-span-2'>Revenue</h2>
+      </div>
+      <div className='grid grid-cols-12 2xl'>
+        <div className='col-span-2'>
+          <img src={Product1} alt="product1" />
+          <img src={ProfileImg} alt="profile" />
+        </div>
         <h2 className='col-span-4'>Product</h2>
         <h2 className='col-span-2'>Price</h2>
         <h2 className='col-span-2'>Sold</h2>

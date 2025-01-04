@@ -1,6 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import RecentActivity from "@/components/Dashboard/RecentActivity";
 import Navbar from "@/components/Dashboard/Navbar";
+import Home from "./page";
+import SidebarMenu from "@/components/shared/SidebarMenu";
+import NavMenu from "@/components/shared/NavMenu";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,8 +28,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* {children} */}
-        <Navbar/>
+        
+        {/* <RecentActivity/> */}
+        {/* <Navbar/> */}
+        <NavMenu/>
+        <div className="flex gap-7">
+        <SidebarMenu/>
+        {children}
+        </div>
+        {/* <Home/> */}
         {/* <Navbar>{children}</Navbar> */}
       </body>
     </html>

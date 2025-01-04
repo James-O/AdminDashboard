@@ -9,15 +9,17 @@ import ProfileImg from '../../image/test2.PNG'
 import Home from '@/app/page';
 import { TextIndentLeft, TextIndentRight} from '@/icon/icon';
 import { Cart, Message, Notify } from '@/icon/badges';
+import Dashboard from '@/app/dashboard/page';
 
 const { Header, Content, Sider } = Layout;
 const {Search} = Input;
 
 const Navbar = () => {
-    const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+  
   
   //dropdown
   const items = [
@@ -339,7 +341,8 @@ const Navbar = () => {
             className='bg-blue-50'
             
           >
-            <Home/>
+            {/* <Home/> */}
+            <Dashboard/>
           </Content>
         </Layout>
       </Layout>
